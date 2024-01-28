@@ -12,6 +12,10 @@ a {
 
 body {
   color: #505050;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
 }
 
 .header__top {
@@ -30,6 +34,7 @@ body {
   flex-direction: column;
   height: 100%;
   color: #fff;
+  font-family: Georgia;
 }
 
 .header__title {
@@ -39,6 +44,7 @@ body {
   font-weight: bold;
   line-height: 227px;
   margin: auto;
+  font-weight: 700;
 }
 
 .header__text {
@@ -83,4 +89,11 @@ body {
   font-weight: 700;
   line-height: 19px;
   margin: 0 6px;
+  border-bottom: 4px solid transparent;
+  transition: all 0.5s;
+}
+
+.menu__list-link:hover {
+  color: #4e5665;
+  border-bottom: 4px solid #ecb84c;
 }
