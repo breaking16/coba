@@ -18,6 +18,21 @@ body {
   font-weight: 400;
 }
 
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-line {
+  border-bottom: 1px solid rgba(208, 212, 216, 0.5);
+}
+
+.container-content {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
 .header__top {
   background-image: url(../images/top-bg.jpg);
   height: 100vh;
@@ -96,4 +111,51 @@ body {
 .menu__list-link:hover {
   color: #4e5665;
   border-bottom: 4px solid #ecb84c;
+}
+
+.reason {
+  padding: 80px 0 0;
+}
+
+.reason__title {
+  color: rgb(78, 86, 101);
+  font-family: Georgia;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.reason__link {
+  text-align: right;
+}
+
+.reason__link a {
+  color: rgb(236, 184, 76);
+  font-weight: 700;
+  margin-bottom: 36px;
+}
+
+.reason__statistics {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.reason__statistics-num {
+  color: rgb(78, 86, 101);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-top: 32px;
+}
+
+.reason__statistics-text {
+  color: rgb(144, 144, 144);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
 }
