@@ -44,7 +44,6 @@ body {
 }
 
 .header__top {
-  background-image: url(../images/top-bg.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,11 +177,37 @@ body {
 
 .about__item {
   margin-bottom: 100px;
+  padding: 70px 0;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .about__box {
   padding: 33px 40px 18px;
   background-color: #fff;
+  max-width: 470px;
+  position: relative;
+}
+
+.about__box::after,
+.about__box::before {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 33px;
+}
+
+.about__box::before {
+  background-image: url(../images/decor-left.svg);
+  top: 19px;
+  left: 19px;
+}
+
+.about__box::after {
+  border-bottom: 2px solid rgb(236, 184, 76);
+  border-right: 2px solid rgb(236, 184, 76);
+  right: 19px;
+  bottom: 19px;
 }
 
 .about__box-title {
@@ -191,4 +216,12 @@ body {
   line-height: 25px;
   color: rgb(78, 86, 101);
   margin-bottom: 20px;
+}
+
+.about__item:nth-child(even) {
+  background-position: left;
+}
+
+.about__item:nth-child(even) .about__box {
+  margin-left: auto;
 }
