@@ -244,12 +244,31 @@ body {
   border-left: 2px solid rgb(236, 184, 76);
 }
 
+.about__preview-title {
+  margin-bottom: 38px;
+}
+
+.about__preview-text {
+  margin: 53px auto 80px;
+}
+
 .photo {
   padding: 80px 0;
 }
 
 .photo__title {
   margin-bottom: 42px;
+}
+
+.about__images-box {
+  padding-top: 73px;
+}
+
+.about__dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgb(236, 184, 76);
 }
 
 .photo__text {
@@ -271,6 +290,7 @@ body {
 .photo__slider {
   max-width: 640px;
   margin: 0 auto;
+  box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.3);
 }
 
 .slick-arrow {
