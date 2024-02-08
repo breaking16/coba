@@ -274,9 +274,21 @@ body {
   cursor: pointer;
 }
 
+.about__dot--1 {
+  top: 190px;
+  left: 148px;
+}
+.about__dot--2 {
+  top: 188px;
+  left: 495px;
+}
 .about__dot--3 {
   top: 147px;
   right: 374px;
+}
+.about__dot--4 {
+  bottom: 28px;
+  right: 299px;
 }
 
 .about__dot::after {
@@ -310,6 +322,15 @@ body {
   white-space: nowrap;
   top: -140px;
   left: 150px;
+  display: none;
+}
+
+.about__dot:hover::before {
+  display: block;
+}
+
+.about__dot:hover .about__dot-text {
+  display: block;
 }
 
 .photo__text {
@@ -435,4 +456,31 @@ body {
   line-height: 19px;
   text-align: center;
   padding-top: 40px;
+}
+
+.menu__btn {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .header__title {
+    font-size: 120px;
+    line-height: 150px;
+  }
+  .header__text {
+    font-size: 20px;
+  }
+  .menu__btn {
+    display: block;
+    width: 40px;
+  }
+  .menu__btn span {
+    display: block;
+    margin-bottom: 10px;
+    background-color: rgb(255, 214, 0);
+    height: 4px;
+  }
+  .menu__list {
+    display: none;
+  }
 }
